@@ -15,7 +15,7 @@ public class Picture
     private Square window;
     private Triangle roof;
     private Circle sun;
-    private Circle sun2;
+    private Circle campo;
     
     
     
@@ -58,16 +58,16 @@ public class Picture
         sun.moveVertical(-40);
         sun.changeSize(80);
         sun.makeVisible();
+        
+        
+        campo = new Circle();
+        campo.changeColor("green");
+        campo.moveHorizontal(-650);
+        campo.moveVertical(150);
+        campo.changeSize(1400);
+        campo.makeVisible();
+        
         sun.slowMoveVertical(120);
-        
-        sun2 = new Circle();
-        sun2.changeColor("green");
-        sun2.moveHorizontal(-650);
-        sun2.moveVertical(150);
-        sun2.changeSize(1400);
-        sun2.makeVisible();
-        
-        
         
         
     }
