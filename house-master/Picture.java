@@ -67,7 +67,8 @@ public class Picture
         campo.changeSize(1400);
         campo.makeVisible();
         
-        sun.slowMoveVertical(120);
+        
+        
         
         
     }
@@ -97,6 +98,18 @@ public class Picture
             window.changeColor("black");
             roof.changeColor("green");
             sun.changeColor("yellow");
+        }
+    }
+    
+    /**
+     * Se mueve el sol hacia abajo lentamente
+     */
+    public void moveSun()
+    {
+        if (wall != null)   // only if it's painted already...
+        {
+        
+            sun.slowMoveVertical(120);
         }
     }
 }
