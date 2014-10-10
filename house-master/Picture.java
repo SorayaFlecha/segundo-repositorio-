@@ -69,7 +69,7 @@ public class Picture
         
         
         
-        
+        window.changeColor("black");
         
     }
 
@@ -110,6 +110,11 @@ public class Picture
         {
         
             sun.slowMoveVertical(120);
+            roof.changeColor("black");
+            wall.changeColor("black");
+            window.changeColor("white");
+            campo.changeColor("black");
+            
         }
     }
 }
