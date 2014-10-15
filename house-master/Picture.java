@@ -16,6 +16,8 @@ public class Picture
     private Triangle roof;
     private Circle sun;
     private Circle campo;
+    private Person per;
+    
     
     
     
@@ -69,7 +71,7 @@ public class Picture
         
         
         
-        window.changeColor("black");
+        
         
     }
 
@@ -102,7 +104,7 @@ public class Picture
     }
     
     /**
-     * Se mueve el sol hacia abajo lentamente
+     * Se mueve el sol hacia abajo lentamente.
      */
     public void moveSun()
     {
@@ -117,4 +119,26 @@ public class Picture
             
         }
     }
-}
+    
+    /**
+     * Se mueve el sol hacia abajo lentamente.
+     */
+    public void apaPernon()
+    {
+        if (wall != null)   // only if it's painted already...
+        {
+        
+        
+        per = new Person();
+        per.changeColor("black");
+        per.changeSize(80, 30);
+        per.moveHorizontal(-200);
+        per.makeVisible();
+        per.slowMoveHorizontal(100);
+        
+        
+            
+        }
+    }
+   
+    }
